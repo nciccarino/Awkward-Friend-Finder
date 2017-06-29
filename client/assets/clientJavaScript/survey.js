@@ -25,10 +25,13 @@ $("#submit").on("click", function() {
 			}
 		}); //.form-control
 
+		console.log(invalidGroup); 
+		console.log(invalidForm); 
+
 		if (invalidGroup == false && invalidControl == false) {
 			var userData = {
-				name: $("#name").val().trim(); 
-				photo: $("#link").val().trim(); 
+				name: $("#name").val().trim(), 
+				photo: $("#link").val().trim(), 
 				scores: [
 					$("#q1").val(), 
 					$("#q2").val(),
@@ -41,7 +44,7 @@ $("#submit").on("click", function() {
 					$("#q9").val(),
 					$("#q10").val()
 				]
-			} //end userData
+			}; //end userData
 
 			var currentURL = window.location.origin; 
 
