@@ -16,9 +16,7 @@ $("#submit").on("click", function() {
 				]
 			}; //end userData
 
-			// $.post("/api/friends", userData).done(function(data) {
-			// 	console.log(data); 
-			// });
+			console.log(userData); 
 
 			var currentURL = window.location.origin; 
 
