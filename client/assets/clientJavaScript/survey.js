@@ -3,7 +3,7 @@ $("#submit").on("click", function(event) {
 	var userData = {
 				name: $("#name").val().trim(), 
 				photo: $("#link").val().trim(), 
-				scores: [
+				score: [
 					$("#q1").val(), 
 					$("#q2").val(),
 					$("#q3").val(),
@@ -15,7 +15,7 @@ $("#submit").on("click", function(event) {
 					$("#q9").val(),
 					$("#q10").val()
 				]
-			}; //end userData
+			} //end userData
 
 			console.log(userData); 
 
@@ -25,8 +25,8 @@ $("#submit").on("click", function(event) {
 
 			$.post(currentURL + "/api/friends", userData, function(data) {
 				$("#matchName").text(data.name); 
-				$("#matchPhoto").attr("src", 'https://fanart.tv/api/download.php?type=download&image=13434&section=3'); 
-				$("#modalResults").modal('show'); 
+				$("#matchPhoto").attr("src", data.photo); 
+				$("#modalResults").modal('toggle'); 
 			}); 
 
 }); //on click
