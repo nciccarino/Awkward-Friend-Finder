@@ -30,7 +30,7 @@ $("#submit").on("click", function(event) {
 			$("#modalResults").modal('toggle');  
 		}); 
 	}//if statement 
-	else {
+	else { //prompts to fill in info both in an alert and in the footer
 		alert("Missing required information!"); 
 		$("#prompt").css("display", "block");
 		return false; 
@@ -38,6 +38,7 @@ $("#submit").on("click", function(event) {
 
 }); //on click
 
+//reloads page
 $("#close").on("click", function(evnet) {
 	location.reload();
 	$(document).ready(function(){

@@ -14,6 +14,7 @@ module.exports = function(app) {
 
 		var best = 0;
 
+		//value I typed doesn't matter, just set a large number to assure total will be lower
 		var currentBest = 100000; 
 
 		for (var i = 0; i < userData.length; i++) {
@@ -36,11 +37,10 @@ module.exports = function(app) {
 
 		bestFriend = userData[best]; 
 
-		userData.push(req.body); 
+		userData.push(req.body); // newUser 
 
 		res.json(bestFriend); 
 	}); 
-
 }; 
 
 
