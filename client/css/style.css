@@ -23,14 +23,19 @@
 	background-color: #eeeeee;
 	border-radius: 50px; 
 	text-align: center; 
+	color: black;
 }
-
-/*#jumbotron {
-	background-color: #4aaaa5; 
-}*/
 
 #prompt {
 	text-align: center;
 	color: red;
 	display: none;
+}
+
+#submit {
+	background: #eeeeee;
+	color: #2f6fa7;
+	text-shadow: none; 
+	font-size: 50px; 
+	width: 100%;
 }

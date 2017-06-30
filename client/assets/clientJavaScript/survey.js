@@ -27,9 +27,7 @@ $("#submit").on("click", function(event) {
 		$.post(currentURL + "/api/friends", userData, function(data) {
 			$("#matchName").text(data.name); 
 			$("#matchPhoto").attr("src", data.photo); 
-			$("#modalResults").modal('toggle'); 
-			$("#name").val(""); 
-			$("link").val(""); 
+			$("#modalResults").modal('toggle');  
 		}); 
 	}//if statement 
 	else {
@@ -40,9 +38,9 @@ $("#submit").on("click", function(event) {
 
 }); //on click
 
-// //return home
-// $("#close").on("click", function(event) {
-// 	$.get("/", function(req, res) {
-// 		location.replace(res); 
-// 	});
-// });
+$("#close").on("click", function(evnet) {
+	location.reload();
+	$(document).ready(function(){
+    $(this).scrollTop(0);
+	});
+}); 
