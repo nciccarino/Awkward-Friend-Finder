@@ -14,8 +14,7 @@ module.exports = function(app) {
 
 		var best = 0;
 
-		//value I typed doesn't matter, just set a large number to assure total will be lower
-		var currentBest = 100000; 
+		var currentBest = null; 
 
 		for (var i = 0; i < userData.length; i++) {
 			var diffTotals = []; 
@@ -28,8 +27,12 @@ module.exports = function(app) {
 			var total = diffTotals.reduce(function(a, b) {
 				return a + b;
 			}, 0); 
+
+			if (currentBest == null) {
+				currentBest = total; 
+			}
 			// lowest score wins
-			if (total < currentBest) {
+			else if (total < currentBest) {
 				best = i; 
 				currentBest = total; 
 			}
