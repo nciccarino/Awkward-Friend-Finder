@@ -1,3 +1,36 @@
-#smallTitle {
-	font: bold;
+#matchPhoto {
+	width: 200px;
+	height: 200px; 
+}
+
+.smallTitle {
+	font-weight: bold;
+}
+
+#subtitle {
+	font-weight: bold;
+	text-align: center; 
+}
+
+#survey {
+	background-color: #2f6fa7; 
+	color:  #eeeeee;
+	margin-bottom: 30px; 
+	border-radius: 50px; 
+}
+
+.footer {
+	background-color: #eeeeee;
+	border-radius: 50px; 
+	text-align: center; 
+}
+
+/*#jumbotron {
+	background-color: #4aaaa5; 
+}*/
+
+#prompt {
+	text-align: center;
+	color: red;
+	display: none;
 }

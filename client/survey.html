@@ -25,7 +25,7 @@
 </head>
 <body>
 	<div class = "container" id = "survey">
-		<h2 class = "subtitle">Survey Questions</h2>
+		<h2 class = "subtitle" id = "subtitle">Survey Questions</h2>
 		<hr>
 		<h3 class = "smallTitle">About You</h3>
 			<form>
@@ -144,19 +144,22 @@
 			<hr>
 			<footer class = "footer">
 			<div class = "container">
-				<p>
+				<h4 id = "prompt">please fill out all questions for accurate results</h4>
+				<br>
+				<p id = "tags">
 					<a href = "/api/friends">API Friends List</a>
 					 | 
 					<a href = "https://github.com/nciccarino/awkward-friend-finder">GitHub Repo</a>
 				</p>
 			</div>
 		</footer>
+		<br><br>
 	</div> <!-- end container -->
 	<div class="modal fade" id = "modalResults">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Best Match</h5>
+        <h3 class="modal-title">Best Match</h3>
         <button type="button" class="close" data-dismiss= "modal" aria-label= "Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -166,7 +169,7 @@
         <img id = "matchPhoto" alt = "profile-picture">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" id = "close" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
