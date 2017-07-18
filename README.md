@@ -1,4 +1,5 @@
 # awkward-friend-finder
 
-## Awkwardly find people with similar interests.
-## Then hit them up out of the blue to hang out!
+## Compatibility-based “friend finder” app which takes survey information from a user and pairs them with a user whose results most similarly match theirs. 
+
+## Utilizes Node.js and NPM Packages including Express, Body-Parser, and Path
