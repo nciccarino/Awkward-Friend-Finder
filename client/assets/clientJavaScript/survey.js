@@ -31,7 +31,6 @@ $("#submit").on("click", function(event) {
 		}); 
 	}//if statement 
 	else { //prompts to fill in info both in an alert and in the footer
-		alert("Missing required information!"); 
 		$("#prompt").css("display", "block");
 		return false; 
 	} 
